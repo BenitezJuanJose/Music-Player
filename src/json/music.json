@@ -1,0 +1,50 @@
+{
+    "music":[
+        {
+            "id":"0",
+            "name":"Lovely",
+            "artist":"Billie Eilish",
+            "genero":"Pop",
+            "img":"http://127.0.0.1:5501/src/assets/img/billieEilishLovely.webp",
+            "location":"http://127.0.0.1:5501/src/assets/music/BillieEilishlovely.mp3",
+            "like":""
+        },
+        {  
+            "id":"1",
+            "name": "BZRP #52",
+            "artist": "Quevedo",
+            "genero":"Rap",
+            "img":"http://127.0.0.1:5501/src/assets/img/quevedo.jpg",
+            "location": "http://127.0.0.1:5501/src/assets/music/quevedoBZRP.mp3",
+            "like":""
+        },
+        {
+            "id":"2",
+            "name": "Hu-Tao",
+            "artist": "Hoyoverse",
+            "genero":"Pop",
+            "img":"http://127.0.0.1:5501/src/assets/img/hu-tao.jpg",
+            "location": "http://127.0.0.1:5501/src/assets/music/hutao.mp3",
+            "like":""
+            
+        },
+        {
+            "id":"3",
+            "name": "Shogun",
+            "artist": "Hoyoverse",
+            "genero":"Pop",
+            "img":"http://127.0.0.1:5501/src/assets/img/shogun.jpg",
+            "location": "http://127.0.0.1:5501/src/assets/music/shogun.mp3",
+            "like":""
+        },
+        {
+            "id":"4",
+            "name": "Eternal Flame",
+            "artist": "MindaRyn",
+            "genero":"Pop",
+            "img":"http://127.0.0.1:5501/src/assets/img/likeflames.jpg",
+            "location": "http://127.0.0.1:5501/src/assets/music/likeflames.mp3",
+            "like":""
+        }
+    ]
+}

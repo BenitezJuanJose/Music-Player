@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    transition: all 0.5;
+    font-family: Poppins;
+}
+ul,ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+button{
+    height: 2rem;
+    width: 12rem;
+    outline: none;
+    border: none;
+    border-radius:1rem;
+}
+
+body{
+    padding: 1rem;
+}
+
+/*header styles*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__tittle{
+    font-size: 2rem ;
+}
+.header__nav ul{
+    display: flex;
+    gap: 1rem;
+}
+.header__nav ul li:hover{
+    transform: scale(0.9);
+}
+
+.header__nav ul li a:hover{
+    text-decoration: underline;
+    opacity: 0.8;  
+}
+
+/*banner styles*/
+.banner{
+    height: 500px;
+    border-radius: 1rem;
+
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+
+
+    background-image: url(../assets/img/banner.png);
+    background-position: center;
+}
+.banner__text{
+    color: #fff;
+    width: 400px;
+    
+    max-height: 200px;    
+}
+.banner__text h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.banner__text p{
+    opacity: 0.8;
+}
+.banner__text button:hover{
+    opacity: 0.8;
+}
+
+/*music container styles*/
+
+.music_container{
+    display: flex;
+    gap: 1rem;
+    overflow-x:scroll ;
+}
+.music_container::-webkit-scrollbar {
+    height: .5rem;
+    width: 1rem;
+}
+.music_container::-webkit-scrollbar-thumb{
+    background-color: #a14d4d;
+    border-radius: 1rem;
+    width: 5rem;
+}
+/*music card container styles*/
+.music_card:hover{
+    cursor: pointer;
+   
+}
+.music_card{
+    height: 250px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.music_card img{
+    width: 100%;
+    height: 75%;
+    border-radius: 1rem;
+    box-shadow: 1px 0.3rem 5px rgb(0, 0, 200,0.2);
+}
+.music_card__text{
+    text-align: center;
+}
+.music_card__text--buttons{
+    display: none;
+}
+
+
+/* music card play styles*/
+.toPlay{
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+
+    display: flex;
+    width: 375px;
+    height: 186px;
+    background-color: #fff;
+    border-radius: 1rem;
+   
+}
+
+.toPlay .music_card__text{
+    position: absolute;
+    right: 0;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.toPlay .music_card__close{
+    position: absolute;
+    right: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #a14d4d;
+    z-index: 10;
+}
+.toPlay .music_card__text--buttons{
+    display: initial;
+}
+.toPlay .music_card__text--buttons button{
+    background: #a14d4d;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.toPlay .music_card__text--buttons button:hover{
+    cursor: pointer;
+}
