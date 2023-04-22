@@ -26,6 +26,6 @@ function showData(data) {
 
 /* */
 
-getData("http://127.0.0.1:5501/src/json/music.json").then((data) => {
+getData("./src/json/music.json").then((data) => {
   showData(data);
 });
